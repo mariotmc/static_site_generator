@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+
+  <body>
+    <section class="page-header">
+      <h1 class="project-name"><%= site.title %></h1>
+      <h2 class="project-tagline"><%= site.description %></h2>
+      <a href="<%= site.basePath %>/" class="btn">Home</a>
+      <a href="<%= site.basePath %>/markdown-page" class="btn">Markdown Page</a>
+      <a href="<%= site.basePath %>/ejs-page" class="btn">EJS Page</a>
+      <a href="<%= site.basePath %>/html-page" class="btn">HTML Page</a>
+    </section>
+
+    <section class="main-content">
+      <%- body %>
+    </section>
+  </body>
+</html>
